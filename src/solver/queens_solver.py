@@ -65,7 +65,7 @@ def _place_queens(board: Board, sorted_compartments: dict[int, list[tuple[int, i
       blocked_cols[col] = False
 
       # Backtrack
-      board.remove_queen(row, col)
+      board.remove_marker(row, col)
       filled_colours.remove(colour)
       placed_queens.remove((row, col))
 
